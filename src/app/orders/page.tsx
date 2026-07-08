@@ -32,7 +32,7 @@ const OrdersPage = async () => {
             <p>Order ID: {order.id}</p>
             <p>Status: {order.status}</p>
             <p>Total: ${(order.totalInCents / 100).toFixed(2)}</p>
-            <p>Date: {new Date(order.createdAt).toLocaleDateString()}</p>
+            <p>Date: {new Date(order.timestamp).toLocaleDateString()}</p>
             <h3 className="font-bold text-xl mt-3">Items:</h3>
             <ul className="flex flex-col gap-3 pl-5">
               {order.cart.map((item: any) => (
