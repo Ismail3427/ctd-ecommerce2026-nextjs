@@ -21,7 +21,7 @@ const RetailerOrders = () => {
       address: "321 Madeup Ave",
     },
     {
-      id: "0987",
+      id: "09876",
       user_id: "7890",
       completed: true,
       status: "completed",
@@ -29,7 +29,103 @@ const RetailerOrders = () => {
       username: "Billy Bob",
     },
     {
-      id: "0988",
+      id: "09887",
+      user_id: "7891",
+      completed: true,
+      status: "completed",
+      timestamp: Date.now(),
+      username: "Billy Bob",
+    },
+    {
+      id: "09888",
+      user_id: "7891",
+      completed: true,
+      status: "completed",
+      timestamp: Date.now(),
+      username: "Billy Bob",
+    },
+    {
+      id: "09889",
+      user_id: "7891",
+      completed: true,
+      status: "completed",
+      timestamp: Date.now(),
+      username: "Billy Bob",
+    },
+    {
+      id: "09880",
+      user_id: "7891",
+      completed: true,
+      status: "completed",
+      timestamp: Date.now(),
+      username: "Billy Bob",
+    },
+    {
+      id: "09881",
+      user_id: "7891",
+      completed: true,
+      status: "completed",
+      timestamp: Date.now(),
+      username: "Billy Bob",
+    },
+    {
+      id: "09882",
+      user_id: "7891",
+      completed: true,
+      status: "completed",
+      timestamp: Date.now(),
+      username: "Billy Bob",
+    },
+    {
+      id: "09883",
+      user_id: "7891",
+      completed: true,
+      status: "completed",
+      timestamp: Date.now(),
+      username: "Billy Bob",
+    },
+    {
+      id: "09884",
+      user_id: "7891",
+      completed: true,
+      status: "completed",
+      timestamp: Date.now(),
+      username: "Billy Bob",
+    },
+    {
+      id: "09885",
+      user_id: "7891",
+      completed: true,
+      status: "completed",
+      timestamp: Date.now(),
+      username: "Billy Bob",
+    },
+    {
+      id: "09886",
+      user_id: "7891",
+      completed: true,
+      status: "completed",
+      timestamp: Date.now(),
+      username: "Billy Bob",
+    },
+    {
+      id: "098877",
+      user_id: "7891",
+      completed: true,
+      status: "completed",
+      timestamp: Date.now(),
+      username: "Billy Bob",
+    },
+    {
+      id: "098888",
+      user_id: "7891",
+      completed: true,
+      status: "completed",
+      timestamp: Date.now(),
+      username: "Billy Bob",
+    },
+    {
+      id: "098899",
       user_id: "7891",
       completed: true,
       status: "completed",
@@ -40,14 +136,14 @@ const RetailerOrders = () => {
 
   if (session.isLoading) {
     return (
-      <div className="flex min-h-screen items-center justify-center">
+      <div className="flex h-screen items-center justify-center">
         Loading...
       </div>
     );
   }
 
   return (
-    <main className="min-h-screen grow  px-4 py-8 border border-r border-gray-300 ">
+    <main className="min-h-0 min-w-0 flex-1 overflow-y-auto border-r border-gray-300 px-4 py-8">
       <div className="mx-auto w-full max-w-4xl">
         <h1 className="mb-6 text-3xl font-bold text-gray-900">
           Retailer Orders
