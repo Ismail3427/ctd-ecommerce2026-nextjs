@@ -35,7 +35,7 @@ const OrdersPage = async () => {
               <p>Status: {order.status}</p>
               <p>
                 Total (With Discount Excluded):{" "}
-                {(order.cart.product.priceInCents / 100).toFixed(2)}
+                ${(order.cart.product.priceInCents / 100).toFixed(2)}
               </p>
               <p>Date: {new Date(order.timestamp).toLocaleDateString()}</p>
               <h3 className="font-bold text-xl mt-3">Item:</h3>
