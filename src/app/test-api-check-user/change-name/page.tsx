@@ -1,6 +1,14 @@
 // import { auth0 } from "@/lib/auth0";
 // import axios from "axios";
 
+import React from "react";
+
+const page = () => {
+  return <div></div>;
+};
+
+export default page;
+
 // const changeName = async () => {
 //   const sessionId = (await auth0.getSession())?.user.sub;
 //   const response = await axios.post(
