@@ -48,10 +48,7 @@ const RetailerOrders = () => {
 
   if (session.isLoading) {
   }
-<<<<<<< HEAD
   console.log(`Orders: ${JSON.stringify(retailerOrders)}`);
-=======
->>>>>>> parent of 28a7517 (Merge branch 'master' of https://github.com/Ismail3427/ctd-ecommerce2026-nextjs)
   return (
     <main className="min-h-0 min-w-0 flex-1 overflow-y-auto border-r bg-muted/20 px-4 py-8 sm:px-6">
       <div className="mx-auto w-full max-w-5xl">
@@ -61,16 +58,6 @@ const RetailerOrders = () => {
               Retailer Orders
             </h1>
 
-<<<<<<< HEAD
-                <p>
-                  {console.log(order.finalpriceInCents)}
-                  <span className="font-semibold">Price:</span>{" "}
-                  {"$" + (parseFloat(order.order.finalPriceInCents) / 100).toFixed(2)}
-                </p>
-              </div>
-            </article>
-          ))}
-=======
             <p className="mt-1 text-sm text-muted-foreground">
               View the orders customers have placed for your products.
             </p>
@@ -80,7 +67,6 @@ const RetailerOrders = () => {
             {retailerOrders.length}{" "}
             {retailerOrders.length === 1 ? "Order" : "Orders"}
           </Badge>
->>>>>>> parent of 28a7517 (Merge branch 'master' of https://github.com/Ismail3427/ctd-ecommerce2026-nextjs)
         </div>
 
         {retailerOrders.length === 0 ? (
