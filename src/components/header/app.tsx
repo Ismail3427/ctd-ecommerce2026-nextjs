@@ -1,4 +1,5 @@
-import { auth0 } from "@/lib/auth0";
+"use client";
+import { useUser } from "@auth0/nextjs-auth0";
 import Link from "next/link";
 import {
   LayoutDashboard,
@@ -10,18 +11,12 @@ import {
   User,
 } from "lucide-react";
 
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "../ui/hover-card";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
-import { Popover } from "radix-ui";
-import { PopoverContent, PopoverTrigger } from "../ui/popover";
+import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 
-const Header = async () => {
-  const session = await auth0.getSession();
+const Header = () => {
+  const session = useUser();
 
   const userName = session?.user?.name || session?.user?.email || "Account";
 
