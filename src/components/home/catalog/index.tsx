@@ -80,7 +80,10 @@ const ProductCatalog = () => {
                     </Badge>
 
                     {product.discounted && (
-                      <Badge variant="secondary">Discounted</Badge>
+                      <Badge variant="secondary">
+                        Discounted from $
+                        {(product.ogPriceInCents / 100).toFixed(2)}
+                      </Badge>
                     )}
                   </div>
                 </CardHeader>
