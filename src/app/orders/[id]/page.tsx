@@ -186,12 +186,23 @@ const OrdersIdPage = async ({
                 </p>
               </div>
 
-              <div className="rounded-xl border bg-primary/5 p-4">
+              <div className="rounded-xl border bg-primary/5 p-4 relative">
                 <p className="text-sm text-muted-foreground">Order total</p>
 
                 <p className="mt-2 text-2xl font-bold text-primary">
                   {formatCurrency(totalInCents)}
                 </p>
+                <Badge
+                  className="absolute top-4 right-3"
+                  variant="default"
+                  hidden={!((unitPriceInCents * cart.quantity) % totalInCents)}
+                >
+                  Discount:
+                  {" " +
+                    (1 - totalInCents / (unitPriceInCents * cart.quantity)) *
+                      100 +
+                    "%"}
+                </Badge>
               </div>
             </div>
 
